@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-dev/
+.next-backup-*/
+.next-cache-*/
+out/
+out.zip
+.env*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

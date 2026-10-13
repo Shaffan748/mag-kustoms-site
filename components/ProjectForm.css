@@ -1,0 +1,37 @@
+.project-enquiry{background:radial-gradient(ellipse at 0 50%,rgba(255,106,0,.06),transparent 55%),#0b0b0b}
+.project-enquiry-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:center;gap:clamp(28px,5vw,80px)}
+.project-enquiry-copy{min-width:0}
+.project-enquiry-copy h2 span{color:var(--orange)}
+.project-enquiry-copy>p:not(.section-kicker){max-width:400px;line-height:1.8;margin:24px 0 32px;font-size:14px}
+.project-enquiry-points{display:grid;gap:18px}
+.project-enquiry-points>div{display:flex;align-items:center;gap:14px}
+.project-enquiry-points span{display:grid;place-items:center;flex:0 0 36px;height:36px;border:1px solid #483021;border-radius:50%;color:var(--orange);font-family:var(--display);font-size:11px;background:#16110e}
+.project-enquiry-points p{margin:0;color:#ddd;font-size:13px}
+.project-contact-details{display:grid;gap:22px}
+.project-contact-details>div{border-bottom:1px solid var(--line);padding-bottom:20px}
+.project-contact-details>div:last-child{border-bottom:0;padding-bottom:0}
+.project-contact-label{display:block;font-family:var(--display);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:9px}
+.project-contact-details p{font-size:14px;line-height:1.7;color:#b3b5ba;margin:0;overflow-wrap:anywhere}
+.project-contact-details .social-row img{display:block;width:18px;height:18px;margin:0;filter:invert(1)}
+@media(max-width:900px){.project-contact-details .social-row{justify-content:center}}
+.project-form{min-width:0;padding:clamp(24px,3vw,40px);border:1px solid #38302a;border-radius:12px;background:linear-gradient(140deg,#171819,#101112);box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.project-form-heading{margin-bottom:28px}
+.project-form-heading h3{font-size:18px;line-height:1.4;margin:0 0 10px;color:var(--white)}
+.project-form-heading p{margin:0;font-size:12px}
+.project-form-heading p>span,.project-form label>span{color:var(--orange)}
+.project-form-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px}
+.project-form label{display:block;min-width:0;color:#e4e4e4;font-size:13px;font-weight:500}
+.project-form input,.project-form select,.project-form textarea{display:block;width:100%;min-width:0;margin-top:9px;border:1px solid #37393c;border-radius:7px;background:#0c0d0e;color:var(--white);font:inherit;font-size:14px;padding:13px 14px;outline:none;transition:border-color .2s,box-shadow .2s;color-scheme:dark}
+.project-form input,.project-form select{min-height:48px}
+.project-form input::placeholder,.project-form textarea::placeholder{color:#777c83;opacity:1}
+.project-form input:focus,.project-form select:focus,.project-form textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,106,0,.12)}
+.project-form textarea{resize:vertical;min-height:130px;line-height:1.6}
+.project-form-full{grid-column:1/-1}
+.project-instructions-label{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.project-character-count{font-size:11px;color:#969ba2;font-weight:400}
+.project-form small{display:block;color:#969ba2;font-size:11px;line-height:1.5;margin-top:8px}
+.project-submit{margin-top:26px;cursor:pointer}
+.project-form-status{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.project-form-status p{font-size:13px;line-height:1.7;margin:0 0 14px}
+@media(max-width:900px){.project-enquiry-layout{grid-template-columns:minmax(0,1fr);gap:30px}.project-enquiry-copy{text-align:center}.project-enquiry-copy>p:not(.section-kicker){max-width:520px;margin:20px auto 24px}.project-enquiry-points{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.project-enquiry-points>div{flex-direction:column;gap:10px}.project-enquiry-points span{flex-basis:auto;width:36px}.project-enquiry-points p{text-align:center}}
+@media(max-width:620px){.project-form{padding:24px 18px;border-radius:8px}.project-form-fields{grid-template-columns:minmax(0,1fr);gap:20px}.project-form input,.project-form select,.project-form textarea{font-size:16px}.project-form-heading h3{font-size:16px}.project-enquiry-copy>p:not(.section-kicker){font-size:13px}.project-enquiry-points p{font-size:11px}.project-submit{width:100%;font-size:12px}.project-form-status .mk-btn{width:100%}.project-form-heading{margin-bottom:24px}}

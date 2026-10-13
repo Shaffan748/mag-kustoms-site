@@ -1,0 +1,15 @@
+.service-link{display:block;overflow:hidden;transition:border-color .2s,transform .2s}.service-link:hover{border-color:var(--orange);transform:translateY(-4px)}.service-link:focus-visible{outline:2px solid var(--orange);outline-offset:4px}.service-art{height:210px;display:grid;place-items:center;margin:-30px -30px 25px;background:radial-gradient(circle at center,#332416,#141618 65%)}.service-art svg{width:125px;height:125px;fill:none;stroke:#ff9b51;stroke-width:2;stroke-linejoin:round}.service-link strong{display:block;margin-top:25px;font-size:var(--text-size);color:var(--orange)}.service-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.service-capabilities .service-card{min-height:220px}.service-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.service-process{border-top:1px solid #272a2e;background:#0d0e10}@media(max-width:900px){.service-capabilities{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.service-capabilities{grid-template-columns:1fr}.service-art{height:180px}}
+
+.service-art-image{position:relative;height:auto;aspect-ratio:2;overflow:hidden}
+.services-overview-grid{gap:24px;align-items:stretch;grid-template-columns:repeat(2,minmax(0,1fr))}
+.service-card.service-overview-card{padding:0;min-width:0;display:flex;flex-direction:column;border-radius:12px}
+.service-card-media{position:relative;display:block;width:100%;aspect-ratio:16/9;flex:none;overflow:hidden;background:#17191c;border-bottom:1px solid #272a2e}
+.service-card-media>img{width:100%;height:100%;max-width:none;object-fit:cover;transition:transform .35s ease}
+.service-overview-card:hover .service-card-media>img{transform:scale(1.025)}
+.service-card-content{display:flex;flex:1;flex-direction:column;padding:28px}
+.service-card-content>span{font-size:11px;letter-spacing:.08em}
+.service-card-content h3{font-size:clamp(23px,2.3vw,32px);line-height:1.2;margin:16px 0 12px}
+.service-card-content p{margin:0 0 24px;line-height:1.7;max-width:54ch}
+.service-card-content strong{margin-top:auto;padding-top:8px}
+@media(max-width:620px){.services-overview-grid{grid-template-columns:1fr;gap:20px}.service-card-content{padding:22px}}
+@media(prefers-reduced-motion:reduce){.service-link,.service-card-media>img{transition:none}.service-link:hover,.service-overview-card:hover .service-card-media>img{transform:none}}
